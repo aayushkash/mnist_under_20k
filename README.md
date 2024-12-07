@@ -14,18 +14,19 @@ This project implements a Convolutional Neural Network (CNN) for classifying MNI
 - Unit tests compatible with GitHub Actions
 
 ## Project Structure
-mnist_cnn/
-├── src/
-│ ├── model.py # CNN architecture
-│ ├── train.py # Training logic
-│ ├── data.py # Data loading utilities
-│ └── utils.py # Helper functions
-├── tests/ # Unit tests
-├── logs/ # Training logs
-└── requirements.txt
+- mnist_cnn/
+- ├── src/
+- │ ├── model.py # CNN architecture
+- │ ├── train.py # Training logic
+- │ ├── data.py # Data loading utilities
+- │ └── utils.py # Helper functions
+- ├── tests/ # Unit tests
+- ├── logs/ # Training logs
+- └── requirements.txt
 
 ### Key Results
-- Reaches 99.4% validation accuracy in just 13 epochs
+- Reaches 99.4% validation accuracy in just 13 epochs in M1/M2 Mac using MPS acceleration
+- In Colab same model and seed it takes it reaches 99.39% Have to figure out why. Will Apply session 7 methods to imporove on collab
 - Final validation accuracy: 99.46%
 - Consistent improvement in both training and validation metrics
 - Early stopping implemented at target accuracy of 99.4%
